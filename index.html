@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Estelar Barbería — Roma Sur, Ciudad de México</title>
+<meta name="description" content="La Estelar Barbería en Roma Sur, CDMX. Fades de precisión, diseño de barba y una experiencia clásica de barbería desde 2022. Reserva por WhatsApp.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+<!-- Icon sprite -->
+<svg xmlns="http://www.w3.org/2000/svg" class="sr-only" aria-hidden="true">
+  <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="icon-chevron-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></symbol>
+  <symbol id="icon-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></symbol>
+  <symbol id="icon-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.6 7-12a7 7 0 10-14 0c0 4.4 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></symbol>
+  <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3.2 1.8"/></symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M6.6 10.8a15.9 15.9 0 006.6 6.6l2.2-2.2a1.5 1.5 0 011.5-.35c1.2.35 2.5.55 3.9.55a1.5 1.5 0 011.5 1.5V21a1.5 1.5 0 01-1.5 1.5C10.6 22.5 1.5 13.4 1.5 2.5A1.5 1.5 0 013 1h3.7a1.5 1.5 0 011.5 1.5c0 1.4.2 2.7.55 3.9a1.5 1.5 0 01-.35 1.5l-2.2 2.2z"/></symbol>
+  <symbol id="icon-star" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2.5l2.9 6.2 6.6.6-5 4.6 1.5 6.6L12 17l-6 3.5 1.5-6.6-5-4.6 6.6-.6L12 2.5z"/></symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+  <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></symbol>
+  <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 00-7.8 13.5L3 21l4.6-1.2A9 9 0 1012 3z"/><path d="M8.6 9.6c.35 2.6 2.55 4.8 5.15 5.15.8.1 1.4-.35 1.6-1.1l.1-.5c.05-.35-.1-.7-.4-.9l-1.3-.6a.9.9 0 00-.85.1l-.4.4a5.6 5.6 0 01-2-2l.4-.4c.2-.2.3-.55.1-.85l-.6-1.3a.9.9 0 00-.9-.4l-.5.1c-.75.2-1.2.8-1.1 1.6z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1"/></symbol>
+</svg>
+
+<!-- ==========================================================================
+     Header
+     ========================================================================== -->
+<header class="header" id="siteHeader">
+  <div class="container">
+    <a class="brand" href="#inicio">
+      <span class="brand__mark"><img src="assets/logo.png" alt="" width="46" height="46"></span>
+      <span class="brand__name">La Estelar<span>Barbería · Roma Sur</span></span>
+    </a>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav__list" id="navList">
+        <li><a class="nav__link" href="#inicio">Inicio</a></li>
+        <li><a class="nav__link" href="#nosotros">Nosotros</a></li>
+        <li><a class="nav__link" href="#servicios">Servicios</a></li>
+        <li><a class="nav__link" href="#anuncios">Anuncios</a></li>
+        <li><a class="nav__link" href="#portafolio">Portafolio</a></li>
+        <li><a class="nav__link" href="#resenas">Reseñas</a></li>
+        <li><a class="nav__link" href="#ubicacion">Ubicación</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--primary btn--sm header__cta" href="https://wa.me/525548317478?text=Hola%2C%20quiero%20reservar%20una%20cita%20en%20La%20Estelar" target="_blank" rel="noopener">
+        <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+        Reservar
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Abrir menú">
+        <svg class="icon icon-menu" aria-hidden="true"><use href="#icon-menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="#icon-close"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-menu__list">
+    <li><a class="mobile-menu__link" href="#inicio">Inicio</a></li>
+    <li><a class="mobile-menu__link" href="#nosotros">Nosotros</a></li>
+    <li><a class="mobile-menu__link" href="#servicios">Servicios</a></li>
+    <li><a class="mobile-menu__link" href="#anuncios">Anuncios</a></li>
+    <li><a class="mobile-menu__link" href="#portafolio">Portafolio</a></li>
+    <li><a class="mobile-menu__link" href="#resenas">Reseñas</a></li>
+    <li><a class="mobile-menu__link" href="#ubicacion">Ubicación</a></li>
+  </ul>
+  <div class="mobile-menu__foot">
+    <a href="https://wa.me/525548317478?text=Hola%2C%20quiero%20reservar%20una%20cita%20en%20La%20Estelar" target="_blank" rel="noopener">
+      <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-whatsapp"/></svg> +52 55 4831 7478
+    </a>
+    <span>Bajío 244, Roma Sur, CDMX</span>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ==========================================================================
+       Hero
+       ========================================================================== -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg" aria-hidden="true">
+      <img src="assets/gallery/gallery-03.png" alt="" width="416" height="502" fetchpriority="high">
+    </div>
+    <div class="hero__scrim" aria-hidden="true"></div>
+
+    <div class="container hero__content" data-reveal>
+      <p class="hero__eyebrow">Barbería · Roma Sur, CDMX · Desde 2022</p>
+      <h1 class="hero__title">TU CORTE.<br><em>TU ESTILO.</em></h1>
+      <p class="hero__lead">Fades de precisión, diseño de barba y una experiencia clásica de barbería en el corazón de la Roma. Oficio, detalle y carácter en cada cita.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="https://wa.me/525548317478?text=Hola%2C%20quiero%20reservar%20una%20cita%20en%20La%20Estelar" target="_blank" rel="noopener">
+          <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+          Reservar por WhatsApp
+        </a>
+        <a class="btn btn--outline" href="#servicios">Ver servicios</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat"><div class="stat__value">2022</div><div class="stat__label">Fundada</div></div>
+        <div class="stat"><div class="stat__value">5,000+</div><div class="stat__label">Cortes realizados</div></div>
+        <div class="stat"><div class="stat__value">Roma Sur</div><div class="stat__label">Ciudad de México</div></div>
+      </div>
+    </div>
+
+    <span class="scroll-cue" aria-hidden="true">Desplázate</span>
+  </section>
+
+  <!-- ==========================================================================
+       About
+       ========================================================================== -->
+  <section class="section" id="nosotros">
+    <div class="container about__grid">
+      <div class="about__media" data-reveal>
+        <img src="assets/gallery/gallery-05.png" alt="Cliente recién atendido en La Estelar Barbería, retrato en blanco y negro." width="416" height="502" loading="lazy">
+        <div class="about__media-frame" aria-hidden="true"></div>
+      </div>
+
+      <div class="about__body" data-reveal>
+        <p class="eyebrow">Nuestra historia</p>
+        <h2 class="h2">Donde el oficio<br>se vuelve estilo</h2>
+        <p class="lead" style="margin-top: var(--space-5);">La Estelar nació en 2022 en el corazón de la Roma con una idea simple: una barbería no es solo un corte, es un ritual.</p>
+        <p>Combinamos técnica clásica de barbería con una mirada moderna del estilo: fades limpios, barbas bien construidas y un espacio donde cada cliente sale viéndose — y sintiéndose — como la mejor versión de sí mismo.</p>
+        <p>Cada corte es una conversación entre el barbero y el cliente. Por eso cuidamos cada detalle, desde la navaja hasta la última capa de estilo.</p>
+
+        <div class="about__stats">
+          <div class="stat"><div class="stat__value">2022</div><div class="stat__label">Año de fundación</div></div>
+          <div class="stat"><div class="stat__value">4+</div><div class="stat__label">Barberos expertos</div></div>
+          <div class="stat"><div class="stat__value">4.9</div><div class="stat__label">Calificación</div></div>
+          <div class="stat"><div class="stat__value">5K+</div><div class="stat__label">Cortes hechos</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Services / Pricing
+       ========================================================================== -->
+  <section class="section section--alt" id="servicios">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Servicios</p>
+        <h2 class="h2">El menú</h2>
+        <p class="lead" style="margin-top: var(--space-5);">Precios de referencia en pesos mexicanos. Confírmalos con tu barbero al reservar.</p>
+      </div>
+
+      <div class="services__list" data-reveal>
+        <div class="service-row">
+          <div><div class="service-row__name">Corte clásico</div><div class="service-row__desc">Corte a tijera y máquina, incluye lavado y styling final.</div></div>
+          <div class="service-row__price"><sup>$</sup>280</div>
+        </div>
+        <div class="service-row">
+          <div><div class="service-row__name">Fade + diseño</div><div class="service-row__desc">Degradado de precisión con diseño personalizado a navaja.</div></div>
+          <div class="service-row__price"><sup>$</sup>350</div>
+        </div>
+        <div class="service-row">
+          <div><div class="service-row__name">Corte + barba</div><div class="service-row__desc">El combo completo: corte a elección más perfilado de barba.</div></div>
+          <div class="service-row__price"><sup>$</sup>480</div>
+        </div>
+        <div class="service-row">
+          <div><div class="service-row__name">Barba y perfilado</div><div class="service-row__desc">Delineado, definición de contorno y tratamiento con toalla caliente.</div></div>
+          <div class="service-row__price"><sup>$</sup>220</div>
+        </div>
+        <div class="service-row">
+          <div><div class="service-row__name">Afeitado clásico a navaja</div><div class="service-row__desc">Ritual tradicional con toalla caliente, espuma y navaja.</div></div>
+          <div class="service-row__price"><sup>$</sup>260</div>
+        </div>
+        <div class="service-row">
+          <div><div class="service-row__name">Corte infantil</div><div class="service-row__desc">Para los más pequeños de la casa, hasta 12 años.</div></div>
+          <div class="service-row__price"><sup>$</sup>220</div>
+        </div>
+        <div class="service-row">
+          <div><div class="service-row__name">Paquete La Estelar</div><div class="service-row__desc">Corte + barba + tratamiento capilar. La experiencia completa.</div></div>
+          <div class="service-row__price"><sup>$</sup>650</div>
+        </div>
+      </div>
+
+      <div class="services__foot" data-reveal>
+        <p class="fg-muted" style="max-width:40ch;">¿No sabes qué servicio elegir? Escríbenos por WhatsApp y te recomendamos el corte ideal para ti.</p>
+        <a class="btn btn--outline" href="https://wa.me/525548317478?text=Hola%2C%20tengo%20una%20duda%20sobre%20los%20servicios%20de%20La%20Estelar" target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Announcements — inverted section
+       ========================================================================== -->
+  <section class="section section--invert" id="anuncios">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Anuncios</p>
+        <h2 class="h2">Lo que viene<br>en La Estelar</h2>
+        <p class="lead" style="margin-top: var(--space-5);">Cursos, talleres, nuevos servicios y promociones por tiempo limitado — todo en un solo lugar.</p>
+      </div>
+
+      <div class="announce-grid" data-reveal>
+
+        <!-- Featured / real event -->
+        <article class="announce-card announce-card--featured">
+          <div class="announce-card__media">
+            <img src="assets/announcements/seminario-fade-barba.png" alt="Cartel del seminario de fade y barba impartido por Sebastián Gallegos M. en La Estelar Barbería." width="658" height="832" loading="lazy">
+            <span class="announce-card__date">2 jun 2026</span>
+          </div>
+          <div class="announce-card__body">
+            <h3 class="announce-card__title">Seminario: Fade y Barba</h3>
+            <p class="announce-card__desc">Un día intensivo con <strong>Sebastián Gallegos M.</strong> — construcción del corte, control de largo, cortes creativos, styling y edición de foto y video. Cupo limitado.</p>
+            <div class="announce-card__meta">
+              <span><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>10:00–18:00</span>
+              <span><svg class="icon" aria-hidden="true"><use href="#icon-map-pin"/></svg>Bajío 244, Roma Sur</span>
+              <span><strong>$900</strong></span>
+            </div>
+            <a class="announce-card__cta" href="https://wa.me/525548317478?text=Hola%2C%20quiero%20apartar%20mi%20lugar%20en%20el%20seminario%20de%20Fade%20y%20Barba" target="_blank" rel="noopener">
+              Reservar mi lugar <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Placeholder announcement #1 -->
+        <article class="announce-card">
+          <div class="announce-card__media">
+            <img src="assets/gallery/gallery-07.png" alt="" width="360" height="502" loading="lazy">
+            <span class="announce-card__date">Vigente</span>
+          </div>
+          <div class="announce-card__body">
+            <h3 class="announce-card__title">Horario extendido los sábados</h3>
+            <p class="announce-card__desc">Ahora abrimos hasta más tarde los sábados para que siempre encuentres un lugar en tu fin de semana.</p>
+            <a class="announce-card__cta" href="https://wa.me/525548317478?text=Hola%2C%20quiero%20reservar%20una%20cita%20en%20La%20Estelar" target="_blank" rel="noopener">
+              Reservar <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Placeholder announcement #2 -->
+        <article class="announce-card">
+          <div class="announce-card__media">
+            <img src="assets/gallery/gallery-08.png" alt="" width="360" height="502" loading="lazy">
+            <span class="announce-card__date">Próximamente</span>
+          </div>
+          <div class="announce-card__body">
+            <h3 class="announce-card__title">Próximo taller de barbería</h3>
+            <p class="announce-card__desc">Estamos preparando un nuevo taller. Síguenos en Instagram para ser el primero en enterarte de la fecha.</p>
+            <a class="announce-card__cta" href="https://instagram.com/laestelar.roma" target="_blank" rel="noopener">
+              Síguenos <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Portfolio Carousel
+       ========================================================================== -->
+  <section class="section" id="portafolio">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Portafolio</p>
+        <h2 class="h2">Trabajo que<br>habla por sí solo</h2>
+      </div>
+
+      <div class="carousel" data-reveal
+           role="region"
+           aria-roledescription="carrusel"
+           aria-label="Galería de cortes de La Estelar Barbería">
+        <div class="carousel__viewport">
+          <div class="carousel__track" id="carouselTrack">
+            <div class="carousel__slide"><img src="assets/gallery/gallery-01.png" alt="Corte de cabello estilo shag, perfil, La Estelar Barbería." width="416" height="502" loading="lazy"></div>
+            <div class="carousel__slide"><img src="assets/gallery/gallery-02.png" alt="Corte de cabello con flequillo recto, La Estelar Barbería." width="416" height="502" loading="lazy"></div>
+            <div class="carousel__slide"><img src="assets/gallery/gallery-03.png" alt="Corte texturizado con diseño, vista de perfil, La Estelar Barbería." width="416" height="502" loading="lazy"></div>
+            <div class="carousel__slide"><img src="assets/gallery/gallery-04.png" alt="Corte de cabello rizado, La Estelar Barbería." width="416" height="502" loading="lazy"></div>
+            <div class="carousel__slide"><img src="assets/gallery/gallery-05.png" alt="Corte clásico con bigote, La Estelar Barbería." width="416" height="502" loading="lazy"></div>
+            <div class="carousel__slide"><img src="assets/gallery/gallery-06.png" alt="Diseño creativo de cabello, vista posterior, La Estelar Barbería." width="416" height="502" loading="lazy"></div>
+            <div class="carousel__slide"><img src="assets/gallery/gallery-07.png" alt="Undercut con diseño, vista posterior, La Estelar Barbería." width="360" height="502" loading="lazy"></div>
+            <div class="carousel__slide"><img src="assets/gallery/gallery-08.png" alt="Corte largo texturizado, vista de perfil, La Estelar Barbería." width="360" height="502" loading="lazy"></div>
+            <div class="carousel__slide"><img src="assets/gallery/gallery-09.png" alt="Corte shag corto, La Estelar Barbería." width="360" height="502" loading="lazy"></div>
+          </div>
+        </div>
+
+        <div class="carousel__controls">
+          <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Seleccionar foto"></div>
+          <div class="carousel__buttons">
+            <button class="icon-btn" id="carouselPrev" aria-label="Foto anterior">
+              <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-chevron-left"/></svg>
+            </button>
+            <button class="icon-btn" id="carouselNext" aria-label="Foto siguiente">
+              <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-chevron-right"/></svg>
+            </button>
+          </div>
+        </div>
+        <p class="sr-only" id="carouselStatus" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Reviews
+       ========================================================================== -->
+  <section class="section section--alt" id="resenas">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <p class="eyebrow" style="justify-content:center;">Reseñas</p>
+        <h2 class="h2">Lo que dicen<br>de nosotros</h2>
+        <p class="lead" style="margin-inline:auto; margin-top: var(--space-5); text-align:center;">Espacio para tus reseñas reales de Google, Instagram o clientes frecuentes.</p>
+      </div>
+
+      <div class="reviews-grid" data-reveal>
+        <div class="review-card">
+          <div class="review-card__stars" aria-hidden="true">
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+          </div>
+          <p class="review-card__quote">"[Agrega aquí una reseña real de un cliente — Google o Instagram]"</p>
+          <p class="review-card__author">— [Nombre del cliente]</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars" aria-hidden="true">
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+          </div>
+          <p class="review-card__quote">"[Agrega aquí una reseña real de un cliente — Google o Instagram]"</p>
+          <p class="review-card__author">— [Nombre del cliente]</p>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars" aria-hidden="true">
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+            <svg class="icon" aria-hidden="true"><use href="#icon-star"/></svg>
+          </div>
+          <p class="review-card__quote">"[Agrega aquí una reseña real de un cliente — Google o Instagram]"</p>
+          <p class="review-card__author">— [Nombre del cliente]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Location
+       ========================================================================== -->
+  <section class="section" id="ubicacion">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Ubicación</p>
+        <h2 class="h2">Visítanos<br>en la Roma</h2>
+      </div>
+
+      <div class="location__grid" data-reveal>
+        <div class="location__map">
+          <iframe
+            src="https://www.google.com/maps?q=Baj%C3%ADo%20244%2C%20Roma%20Sur%2C%20Cuauht%C3%A9moc%2C%20Ciudad%20de%20M%C3%A9xico&output=embed"
+            title="Mapa de ubicación de La Estelar Barbería en Bajío 244, Roma Sur, CDMX"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="info-list">
+          <div class="info-item">
+            <span class="info-item__icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-map-pin"/></svg></span>
+            <div>
+              <div class="info-item__label">Dirección</div>
+              <div class="info-item__value">Bajío 244, Roma Sur</div>
+              <div class="info-item__value fg-muted">Cuauhtémoc, 06760, Ciudad de México</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-item__icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-clock"/></svg></span>
+            <div style="width:100%;">
+              <div class="info-item__label">Horario</div>
+              <table class="hours-table">
+                <tr><td>Lunes – Viernes</td><td>10:00 – 20:00</td></tr>
+                <tr><td>Sábado</td><td>10:00 – 20:00</td></tr>
+                <tr><td>Domingo</td><td>Cerrado</td></tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-item__icon"><svg class="icon" width="20" height="20" aria-hidden="true"><use href="#icon-phone"/></svg></span>
+            <div>
+              <div class="info-item__label">Contacto</div>
+              <a class="info-item__value" href="tel:+525548317478" style="display:block;">+52 55 4831 7478</a>
+              <a class="info-item__value fg-muted" href="https://instagram.com/laestelar.roma" target="_blank" rel="noopener" style="display:block;">@laestelar.roma</a>
+            </div>
+          </div>
+
+          <a class="btn btn--primary" href="https://wa.me/525548317478?text=Hola%2C%20quiero%20reservar%20una%20cita%20en%20La%20Estelar" target="_blank" rel="noopener" style="align-self:flex-start;">
+            <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+            Reservar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==========================================================================
+     Footer
+     ========================================================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="#inicio">
+          <span class="brand__mark"><img src="assets/logo.png" alt="La Estelar Barbería" width="46" height="46"></span>
+          <span class="brand__name">La Estelar<span>Barbería · Roma Sur</span></span>
+        </a>
+        <p>Fades de precisión, diseño de barba y una experiencia clásica de barbería en el corazón de la Roma, Ciudad de México. Desde 2022.</p>
+        <div class="footer__social">
+          <a class="icon-btn" href="https://instagram.com/laestelar.roma" target="_blank" rel="noopener" aria-label="Instagram de La Estelar Barbería">
+            <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-instagram"/></svg>
+          </a>
+          <a class="icon-btn" href="https://wa.me/525548317478" target="_blank" rel="noopener" aria-label="WhatsApp de La Estelar Barbería">
+            <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-whatsapp"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__heading">Explorar</div>
+        <ul class="footer__list">
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#anuncios">Anuncios</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__heading">Contacto</div>
+        <ul class="footer__list">
+          <li><a href="tel:+525548317478">+52 55 4831 7478</a></li>
+          <li><a href="https://instagram.com/laestelar.roma" target="_blank" rel="noopener">@laestelar.roma</a></li>
+          <li>Bajío 244, Roma Sur, CDMX</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026 La Estelar Barbería. Todos los derechos reservados.</span>
+      <span>Roma Sur, Ciudad de México</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
