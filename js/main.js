@@ -44,29 +44,6 @@
   });
 
   /* ------------------------------------------------------------------
-     Active nav link on scroll
-     ------------------------------------------------------------------ */
-  var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
-  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav__link'));
-
-  if ('IntersectionObserver' in window && sections.length) {
-    var navObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        var id = entry.target.getAttribute('id');
-        navLinks.forEach(function (link) {
-          var match = link.getAttribute('href') === '#' + id;
-          link.classList.toggle('is-active', match);
-          if (match) link.setAttribute('aria-current', 'true');
-          else link.removeAttribute('aria-current');
-        });
-      });
-    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
-
-    sections.forEach(function (s) { navObserver.observe(s); });
-  }
-
-  /* ------------------------------------------------------------------
      Scroll reveal
      ------------------------------------------------------------------ */
   var revealEls = Array.prototype.slice.call(document.querySelectorAll('[data-reveal]'));

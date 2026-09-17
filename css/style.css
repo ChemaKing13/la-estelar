@@ -1,5 +1,5 @@
 /* ==========================================================================
-   La Estelar Barbería — Design Tokens & Base
+   La Estelar — Design Tokens & Base
    ========================================================================== */
 
 :root{
@@ -431,29 +431,10 @@ h3.h3, .h3{
   position: relative;
   min-height: 100svh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   padding-top: calc(var(--header-h) + var(--space-6));
   padding-bottom: var(--space-9);
   overflow: hidden;
-}
-.hero__bg{
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-}
-.hero__bg img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
-  filter: grayscale(1) contrast(1.05);
-}
-.hero__scrim{
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    linear-gradient(to top, rgba(11,11,12,.97) 0%, rgba(11,11,12,.75) 32%, rgba(11,11,12,.35) 60%, rgba(11,11,12,.55) 100%);
 }
 
 .hero__content{ max-width: 780px; }
@@ -649,106 +630,6 @@ h3.h3, .h3{
 }
 
 /* ==========================================================================
-   Announcements (inverted section)
-   ========================================================================== */
-
-.announce-grid{
-  display: grid;
-  gap: var(--space-6);
-}
-@media (min-width: 720px){
-  .announce-grid{ grid-template-columns: repeat(2, 1fr); }
-}
-@media (min-width: 1080px){
-  .announce-grid{ grid-template-columns: 1.15fr .85fr .85fr; }
-}
-
-.announce-card{
-  background: var(--white);
-  border: 1px solid var(--invert-line);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
-}
-.announce-card:hover{
-  transform: translateY(-4px);
-  box-shadow: 0 24px 48px -24px rgba(11,11,12,.3);
-}
-.announce-card--featured{ grid-row: span 1; }
-@media (min-width: 1080px){
-  .announce-card--featured{ grid-row: span 2; }
-}
-
-.announce-card__media{
-  position: relative;
-  aspect-ratio: 16 / 10;
-  overflow: hidden;
-  background: var(--invert-bg-alt);
-}
-.announce-card--featured .announce-card__media{ aspect-ratio: 4 / 3; }
-.announce-card__media img{
-  width: 100%; height: 100%;
-  object-fit: cover;
-  filter: grayscale(1);
-}
-.announce-card__date{
-  position: absolute;
-  top: var(--space-4);
-  left: var(--space-4);
-  background: var(--invert-fg);
-  color: var(--invert-bg);
-  font-size: var(--fs-label);
-  font-weight: 700;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  padding: var(--space-2) var(--space-3);
-  border-radius: var(--radius-full);
-}
-
-.announce-card__body{
-  padding: var(--space-6);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-  flex: 1;
-}
-.announce-card__title{
-  font-family: var(--font-body);
-  font-weight: 800;
-  font-size: clamp(1.1rem, .5vw + 1rem, 1.4rem);
-  line-height: 1.2;
-}
-.announce-card__desc{ color: var(--invert-fg-muted); font-size: var(--fs-small); line-height: 1.6; }
-.announce-card__meta{
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-4);
-  font-size: var(--fs-label);
-  color: var(--invert-fg-muted);
-  letter-spacing: .04em;
-  text-transform: uppercase;
-  margin-top: auto;
-  padding-top: var(--space-4);
-  border-top: 1px solid var(--invert-line);
-}
-.announce-card__meta span{ display: inline-flex; align-items: center; gap: 6px; }
-.announce-card__meta .icon{ width: 15px; height: 15px; }
-
-.announce-card__cta{
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  font-weight: 700;
-  font-size: var(--fs-small);
-  color: var(--invert-fg);
-  margin-top: var(--space-2);
-}
-.announce-card__cta .icon{ width: 16px; height: 16px; transition: transform var(--dur-fast) var(--ease-out); }
-.announce-card:hover .announce-card__cta .icon{ transform: translateX(4px); }
-
-/* ==========================================================================
    Portfolio Carousel
    ========================================================================== */
 
@@ -933,4 +814,192 @@ h3.h3, .h3{
 }
 @media (prefers-reduced-motion: reduce){
   [data-reveal]{ opacity: 1; transform: none; transition: none; }
+}
+
+/* ==========================================================================
+   Page hero (interior pages)
+   ========================================================================== */
+
+.page-hero{
+  padding-top: calc(var(--header-h) + var(--space-8));
+  padding-bottom: var(--space-7);
+  border-bottom: 1px solid var(--line);
+}
+.page-hero__title{
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-h2);
+  line-height: 1.02;
+  letter-spacing: -.01em;
+  text-transform: uppercase;
+}
+.page-hero__lead{
+  margin-top: var(--space-5);
+  max-width: 58ch;
+}
+/* The page hero already opens the page; don't double the breathing room. */
+.page-hero + .section{ padding-top: var(--space-7); }
+
+/* ==========================================================================
+   Service cards (home — featured)
+   ========================================================================== */
+
+.service-cards{
+  display: grid;
+  gap: var(--space-5);
+}
+@media (min-width: 640px){
+  .service-cards{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1000px){
+  .service-cards{ grid-template-columns: repeat(3, 1fr); }
+}
+
+.service-card{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--bg);
+  transition: border-color var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
+}
+.service-card:hover{
+  border-color: var(--line-strong);
+  transform: translateY(-3px);
+}
+.service-card__head{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+.service-card__name{
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: clamp(1.05rem, .4vw + 1rem, 1.25rem);
+}
+.service-card__price{
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, .8vw + 1rem, 1.9rem);
+  white-space: nowrap;
+}
+.service-card__price sup{ font-size: .5em; margin-right: 2px; font-family: var(--font-body); font-weight: 600; }
+.service-card__desc{
+  font-size: var(--fs-small);
+  color: var(--fg-muted);
+  flex: 1;
+}
+.service-card__cta{ align-self: flex-start; margin-top: var(--space-2); }
+
+/* Section head with side link */
+.section-head--row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-5);
+}
+.link-arrow{
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 600;
+  font-size: var(--fs-small);
+  white-space: nowrap;
+}
+.link-arrow .icon{ transition: transform var(--dur-fast) var(--ease-out); }
+.link-arrow:hover .icon{ transform: translateX(4px); }
+
+/* ==========================================================================
+   Service rows — with per-service booking button
+   ========================================================================== */
+
+.service-row__aside{
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+@media (max-width: 719px){
+  .service-row{
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-4);
+  }
+}
+@media (min-width: 720px){
+  .service-row{ align-items: center; }
+  .service-row__aside{ justify-content: flex-end; min-width: 220px; }
+}
+
+/* ==========================================================================
+   Visit block (home)
+   ========================================================================== */
+
+.visit{
+  display: grid;
+  gap: var(--space-7);
+  align-items: center;
+}
+@media (min-width: 900px){
+  .visit{ grid-template-columns: 1fr .85fr; gap: var(--space-9); }
+}
+.visit__list{ margin: var(--space-6) 0; }
+.visit__media{
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.visit__media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+  display: block;
+}
+
+/* ==========================================================================
+   CTA band
+   ========================================================================== */
+
+.cta-band{
+  border-top: 1px solid var(--line);
+  padding: var(--space-8) 0;
+}
+.cta-band__inner{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+}
+.cta-band__text{ margin-top: var(--space-3); max-width: 44ch; }
+
+/* ==========================================================================
+   Sticky booking bar (mobile)
+   ========================================================================== */
+
+.booking-bar{
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 98;
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  padding-bottom: calc(var(--space-3) + env(safe-area-inset-bottom, 0px));
+  background: rgba(11,11,12,.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid var(--line);
+}
+.booking-bar__cta{ flex: 1; justify-content: center; }
+.booking-bar__call{ flex-shrink: 0; width: 48px; height: 48px; }
+
+@media (min-width: 900px){
+  .booking-bar{ display: none; }
+}
+@media (max-width: 899px){
+  body{ padding-bottom: 88px; }
 }
